@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import axiosInstance from "../../api/axios"; // default이기에 이름 아무렇게 가능
-import requests from "../../api/request";
+import axiosInstance from "../api/axios"; // default이기에 이름 아무렇게 가능
+import requests from "../api/request";
 import "./Banner.css";
 import styled from "styled-components";
 

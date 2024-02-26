@@ -30,6 +30,7 @@ const Logo = styled.a`
     width: 100%;
   }
 `;
+
 const Nav = (): JSX.Element => {
   const [show, setShow] = useState<string>("false");
 
