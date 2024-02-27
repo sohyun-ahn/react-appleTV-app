@@ -114,13 +114,13 @@ const Iframe = styled.iframe`
   }
 `;
 
-const Container = styled.div` 
-display: flex;
-justify-content: center;
-align-itemsL center;
-flex-direction: column;
-width: 100%;
-height: 100vh;
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
 `;
 const HomeContainer = styled.div`
   width: 100%;

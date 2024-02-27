@@ -1,5 +1,6 @@
 import { SetStateAction, useEffect, useState } from "react";
 import { useNavigate } from "react-router";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 interface PropsType {
@@ -58,6 +59,7 @@ const Login = styled.a`
 `;
 const Nav = (): JSX.Element => {
   const [show, setShow] = useState<string>("false");
+  const { pathname } = useLocation();
   const [searchValue, setSearchValue] = useState<string>(""); //영화 search inputd에 해당 값
   const navigate = useNavigate(); //react-router-dom에서 제공하는 함수인 useNavigate() hook
 
@@ -91,17 +93,17 @@ const Nav = (): JSX.Element => {
         />
       </Logo>
 
-      {/* {pathname === "/" ? ( */}
-      {/* <Login>Login</Login> */}
-      {/* ) : ( */}
-      <Input
-        type="text"
-        className="nav__input"
-        value={searchValue}
-        onChange={handleChange}
-        placeholder="영화를 검색해주세요."
-      />
-      {/* )} */}
+      {pathname === "/" ? (
+        <Login>Login</Login>
+      ) : (
+        <Input
+          type="text"
+          className="nav__input"
+          value={searchValue}
+          onChange={handleChange}
+          placeholder="영화를 검색해주세요."
+        />
+      )}
     </NavWrapper>
   );
 };

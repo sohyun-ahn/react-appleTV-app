@@ -6,7 +6,8 @@
 .banner__contents {
   margin-left: 40px;
   padding-top: 140px;
-  height: 190px;
+  /* height: 190px; */
+  height: 100%;
 }
 .banner__title {
   font-size: 3rem;
@@ -80,9 +81,13 @@
     padding-left: 2.3rem;
     margin-left: 0px !important;
   }
+  .banner__title {
+    font-size: 1.3rem;
+  }
   .banner__description {
     font-size: 0.8rem !important;
     width: auto !important;
+    overflow: hidden;
   }
   .info {
     text-align: start;

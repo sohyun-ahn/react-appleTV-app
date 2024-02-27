@@ -1,7 +1,7 @@
 import axios from "../../api/axios";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
-import "./SearchPage.module.css";
+import "./SearchPage.css";
 import useDebounce from "../../hooks/useDebounce";
 
 interface MovieType {

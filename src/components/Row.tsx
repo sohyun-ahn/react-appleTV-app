@@ -54,7 +54,7 @@ const Row = ({ title, id, fetchUrl }: PropsType) => {
 
   useEffect(() => {
     fetchMovieData();
-  }, [fetchUrl]); // 한번만 부르기 때문에 []
+  }, [fetchUrl]);
 
   return (
     // arrow <,> 부분을 지우고 swiper module로 바꿔줌
@@ -88,12 +88,12 @@ const Row = ({ title, id, fetchUrl }: PropsType) => {
           },
         }}
       >
-        <Content>
+        <Content id={id}>
           {movies.map((movie) => (
             <SwiperSlide key={movie.id}>
               <Wrap>
                 <img
-                  className="row__poster"
+                  // className="row__poster"
                   src={`${imageBasePath}${movie.backdrop_path}`}
                   alt={movie.name}
                   onClick={() => handleClick(movie)}
