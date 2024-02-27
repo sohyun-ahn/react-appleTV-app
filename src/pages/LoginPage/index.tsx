@@ -21,11 +21,13 @@ const LoginPage = () => {
 };
 
 const Container = styled.section`
+  position: relative;
+  top: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 70px);
 `;
 const Center = styled.div`
   max-width: 650px;

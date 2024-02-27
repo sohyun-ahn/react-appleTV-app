@@ -160,7 +160,6 @@ const Nav = (): JSX.Element => {
     // 로그인할 때,
     signInWithPopup(auth, provider)
       .then((result: { user?: any }) => {
-        console.log(result);
         setUserData(result.user);
         localStorage.setItem("userData", JSON.stringify(result.user));
       })
