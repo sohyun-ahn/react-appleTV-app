@@ -41,7 +41,6 @@ const Banner = (): JSX.Element => {
     const { data: movieDetail } = await axiosInstance.get(`movie/${movieId}`, {
       params: { append_to_response: "videos" },
     });
-    console.log("movieDetail", movieDetail);
     setMovie(movieDetail);
   };
 
