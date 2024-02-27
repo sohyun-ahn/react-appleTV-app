@@ -4,10 +4,7 @@ const LoginPage = () => {
   return (
     <Container>
       <Center>
-        <Logo
-          src="../../../public/images/apple-gray-logo.svg"
-          alt="apple-logo"
-        />
+        <Logo src="/images/apple-gray-logo.svg" alt="apple-logo" />
         <HeadingText>Sign in with your Apple ID </HeadingText>
         <DescriptionText>
           You will be signed in to Apple TV and Apple Music.
